@@ -1,0 +1,382 @@
+/* General Styles */
+/* body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f9f9f9;
+  }
+  
+  /* Header */
+/* .header {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+  } */
+
+/* .header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  } */
+*/
+
+/* Main Content */
+.content {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* .main-content {
+    margin-bottom: 40px;
+  }
+  
+  .main-content h2 {
+    color: #4CAF50;
+  } */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.bg-cream {
+  background-color: #fff2e1;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 30px;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+}
+
+/* .navbar .logo .square {
+    background-color: #23bdee;
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    transform: rotate(45deg);
+    position: absolute;
+} */
+.navbar .logo .sphere {
+  background-color: #23bdee;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.navbar .logo h4 {
+  position: relative;
+  margin-left: 8px;
+  letter-spacing: 2px;
+}
+
+.navbar .nav-list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar .nav-list li {
+  list-style: none;
+  font-size: 15px;
+}
+
+.navbar .nav-list li a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar .nav-list button {
+  border: none;
+  padding: 10px 40px;
+  border-radius: 20px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.navbar .nav-list .login {
+  background-color: #fff;
+}
+
+.navbar .nav-list .signup {
+  background-color: #f48c06;
+  color: #fff;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hamburger .line {
+  width: 30px;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.hamburger .line:nth-child(3) {
+  width: 15px;
+  margin-left: auto;
+}
+
+
+/* Shorts Section */
+.shorts {
+  margin-top: 40px;
+}
+
+.shorts h1 {
+  text-align: center;
+}
+
+/* Shorts Section */
+.shorts-container {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  /* Enable horizontal scrolling */
+  padding: 10px 0;
+  scrollbar-width: thin;
+  /* Firefox-specific scrollbar styling */
+  scrollbar-color: #ccc transparent;
+  /* Colors for the scrollbar */
+}
+
+.shorts-container::-webkit-scrollbar {
+  height: 8px;
+  /* Height of the scrollbar */
+}
+
+.shorts-container::-webkit-scrollbar-thumb {
+  background: #aaa;
+  /* Scrollbar color */
+  border-radius: 4px;
+}
+
+
+.short {
+  flex: 0 0 200px;
+  height: 350px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background: #000;
+  cursor: pointer;
+}
+
+.short video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Footer */
+/* .footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+  } */
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  position: relative;
+  width: 25vw;
+  max-width: 25vw;
+  background: transparent;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.modal-content video {
+  width: 100%;
+  height: 90vh;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: red;
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 10;
+}
+
+.nav-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.nav-btn.left {
+  left: 10px;
+}
+
+.nav-btn.right {
+  right: 10px;
+}
+
+footer {
+  background-color: #252641;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+footer .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .logo .square {
+  width: 30px;
+  position: absolute;
+  height: 30px;
+  border: 1px solid #23bdee;
+  border-radius: 5px;
+  transform: rotate(45deg);
+}
+
+footer .logo h4 {
+  position: relative;
+  top: 0;
+  color: #fff;
+  left: 20px;
+}
+
+.v-line {
+  width: 1px;
+  height: 60px;
+  background-color: #9ca3af;
+  margin-left: 1.5rem;
+}
+
+footer .edu-logo {
+  display: flex;
+  gap: 1rem;
+}
+
+.fa-solid {
+  color: #ffffff;
+  margin-left: 10%;
+  font-size: 15px;
+}
+
+footer .edu-logo1 {
+  color: #ffffff;
+  margin-left: 32%;
+  font-size: 9px;
+}
+
+.edu-logo2 {
+  color: #ffffff !important;
+  display: flex;
+  gap: 1rem;
+  margin-left: 23%;
+  font-size: 30px;
+}
+
+.fa-brands {
+  color: #ffffff;
+}
+
+.edu-logo span {
+  width: 100px;
+  color: #fff;
+  font-size: 15px;
+}
+
+footer .subscribe-letter h5 {
+  color: rgb(209, 213, 219);
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+footer .subscribe-letter input {
+  border: 1px solid #9ca3af;
+  background-color: transparent;
+  padding: 8px 20px;
+  border-radius: 25px;
+  width: 180px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+footer .subscribe-letter button {
+  background: linear-gradient(105.5deg, rgb(84, 90, 231) 19.57%, rgb(57, 63, 207) 78.85%);
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+footer .links a {
+  color: #9ca3af;
+  text-decoration: none;
+  font-size: 13px;
+  padding: 0px 10px;
+}
+
+footer .links a:nth-child(1),
+footer .links a:nth-child(2) {
+  border-right: 1px solid #9ca3af;
+}
+
+footer .copyright p {
+  color: #9ca3af;
+  font-size: 13px;
+  margin-top: 1rem;
+}

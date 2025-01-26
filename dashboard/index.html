@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="col-md-2 d-none d-md-block sidebar">
+                <div>
+                    <h4>Edusphere</h4>
+                </div>
+                <div class="profile text-center">
+                    <img src="https://via.placeholder.com/80" alt="Profile Picture" class="rounded-circle mb-3">
+                    <h5>Admin</h5>
+                    <p>School Management</p>
+                </div>
+                <ul class="nav flex-column mx-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span class="material-symbols-outlined">
+                                home
+                            </span>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span class="material-symbols-outlined">
+                                team_dashboard
+                            </span>Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span class="material-symbols-outlined">
+                                school
+                            </span>Students</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span class="material-symbols-outlined">
+                                article
+                            </span>Reports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span class="material-symbols-outlined">
+                                settings
+                            </span>Settings</a>
+                    </li>
+                </ul>
+                <!-- <div class="mt-auto d-flex flex-column justify-content-center"
+                    style="background-color: #56a07b; border-radius: 10px;">
+                    <p class="p-3 d-md-block">You can manage multiple farms here</p>
+                    <div class="text-center">
+                       
+                        <button type="button" class="btn btn-light" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Add Farm +
+                        </button> -->
+                <!-- Modal -->
+                <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Add Farm</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body" style="color: black; text-align: start;">
+                                        <h2>Add Farm</h2>
+                                        <p>Select State:</p>
+                                        <p>Select District:</p>
+                                        <p>Select Village:</p>
+                                        <p>Kharsa No:</p>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="https://via.placeholder.com/100" class="m-3 rounded">
+                        </div>
+                    </div>
+                </div> -->
+            </nav>
+
+            <!-- Mobile Sidebar Toggle Button -->
+            <button class="btn btn-success d-md-none btn-toggle-sidebar">Toggle Sidebar</button>
+
+            <!-- Main content -->
+            <main class="col-md-10 ml-sm-auto col-lg-10 main-content">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3">
+                    <h2>EduSphere Dashboard</h2>
+                    <!-- <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Add crop
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div> -->
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-md-4 col-6">
+                        <div class="card p-3">
+                            <h6><span class="material-symbols-outlined rounded-circle ">
+                                    psychiatry
+                                </span>Student Count</h6>
+                            <p class="fw-bolder fs-3">1200</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-6">
+                        <div class="card p-3">
+                            <h6><span class="material-symbols-outlined">
+                                    crop_7_5
+                                </span>Time watched</h6>
+                            <p class="fw-bolder fs-3">750 hours</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-6">
+                        <div class="card p-3">
+                            <h6>Attendance</h6>
+                            <p class="fw-bolder fs-3">92%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid px-0">
+                    <div class="row">
+                        <div class="col-md-4 col-6 mb-3">
+                            <div class="col-md-12 col-6">
+                                <div class="card p-3 mb-2">
+                                    <h6>Average CGPA</h6>
+                                    <p><span class="fw-bold fs-2">3.8 </span><span class="badge bg-danger">High</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-6">
+                                <div class="card p-3 mb-2">
+                                    <h6>Exams Completed</h6>
+                                    <p><span class="fw-bold fs-2">25 </span><span class="badge bg-success">Good</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-6">
+                                <div class="card p-3">
+                                    <h6>Exam Average</h6>
+                                    <p><span class="fw-bold fs-2">4</span><span class="badge bg-warning">Great</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-8 col-6 mb-3 p-0  bg-white border rounded">
+                            <div class="col-md-12 col-12">
+                                <div class="py-3 px-0 border-0">
+                                    <h3 class="px-3 m-0">Student Performance<span style="float: right;">
+                                            <div class="dropdown">
+                                                <button class="btn border dropdown-toggle" type="button"
+                                                    id="dropdownMenuButton" data-bs-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false"
+                                                    style="border-radius: 25px;">
+                                                    All data
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                </div>
+                                            </div>
+                                        </span></h3>
+                                    <p class="px-3">Compare with last time</p>
+                                </div>
+                            </div>
+                            <div class="container-fluid p-0">
+                                <div class="row">
+                                    <div class=" col-md-6 col-12">
+                                        <div class="financial-statistics">
+                                            <div class="progress-bar-container">
+                                                <div class="progress-bar html">
+                                                    <progress id="html" min="0" max="100" value="92"></progress>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="circle">78%</div> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-12 px-0">
+                                        <div class="card p-3 m-3 pe-0 ">
+                                            <h6>Today's Watchtime</h6>
+                                            <h4>60 hours</h4>
+                                            <hr>
+                                            <h6>Total Watchtime</h6>
+                                            <h4>820 hours</h4>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card p-3">
+                            <h4>Activity details<span style="float: right;">
+                                    <div class="dropdown">
+                                        <button class="btn border dropdown-toggle" type="button" id="dropdownMenuButton"
+                                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                            style="border-radius: 25px;">
+                                            All data
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                </span></h4>
+
+                            <div class="d-flex justify-content-around">
+                                <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+        // Sidebar Toggle for Mobile
+        const sidebar = document.querySelector('.sidebar');
+        const toggleButton = document.querySelector('.btn-toggle-sidebar');
+
+        toggleButton.addEventListener('click', function () {
+            sidebar.classList.toggle('active');
+        });
+
+        // Dynamic content (Placeholder example for updating financial statistics)
+        function updateFinancialStatistics() {
+            const financialCircle = document.querySelector('.financial-statistics .circle');
+            const currentProfit = 64; // Example: dynamic value
+            const expectedProfit = 82; // Example: dynamic value
+
+            const percentage = Math.round((currentProfit / expectedProfit) * 100);
+            financialCircle.textContent = percentage + '%';
+        }
+
+        // Call update function on page load
+        document.addEventListener('DOMContentLoaded', function () {
+            updateFinancialStatistics();
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Platform</title>
+  <link rel="stylesheet" href="SContant.css">
+  <!-- font awesome link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <!-- <header class="header">
+    <h1>Learnify</h1>
+    <p>Your Gateway to Knowledge</p>
+  </header> -->
+
+  <main class="content">
+    <!-- <section class="main-content">
+      <h2>Welcome to Learnify</h2>
+      <p>Explore curated content designed to help you excel in your educational journey. Learn from articles, videos, and more.</p>
+    </section> -->
+
+    <!-- navbar starts  -->
+    <header>
+      <nav class="navbar bg-cream">
+        <div class="logo">
+          <!-- <div class="square"></div> -->
+          <div class="sphere"></div>
+          <h4>Edusphere</h4>
+        </div>
+        <ul class="nav-list">
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#Shorts">Shorts</a></li>
+          <li><a href="#course">Courses</a></li>
+          <li><a href="#dashboard">Dashboard</a></li>
+          <li><a href="#Deadline">Deadline</a></li>
+          <li><a href="#aboutus">About Us</a></li>
+          <button class="User">User</button>
+          <!-- <button class="signup">Sign Up</button> -->
+        </ul>
+        <div class="hamburger">
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+          <div class="line lin2-3"></div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="shorts">
+      <h1>Shorts</h1>
+      <div class="shorts-container">
+        <div class="short" onclick="playVideo('short1')">
+          <video id="short1" src="./3682026-uhd_2160_4096_25fps.mp4" muted></video>
+        </div>
+        <div class="short" onclick="playVideo('short2')">
+          <video id="short2" src="./4769627-uhd_2160_4096_25fps.mp4" muted></video>
+        </div>
+        <div class="short" onclick="playVideo('short3')">
+          <video id="short3" src="./3201291-hd_1080_1920_25fps.mp4" muted></video>
+        </div>
+        <div class="short" onclick="playVideo('short4')">
+          <video id="short4" src="./4778723-uhd_2160_4096_25fps.mp4" muted></video>
+        </div>
+        <div class="short" onclick="playVideo('short5')">
+          <video id="short5" src="./3682026-uhd_2160_4096_25fps.mp4" muted></video>
+        </div>
+        <div class="short" onclick="playVideo('short6')">
+          <video id="short6" src="./3678299-uhd_2160_4096_25fps.mp4" muted></video>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="videoModal" class="modal">
+    <div class="modal-content">
+      <button class="nav-btn left" onclick="navigateVideo('prev')">&#8249;</button>
+      <video id="modalVideo" controls autoplay></video>
+      <button class="nav-btn right" onclick="navigateVideo('next')">&#8250;</button>
+    </div>
+  </div>
+
+  <!-- footer section starts  -->
+  <footer class="mt-2">
+    <div class="edu-logo">
+      <div class="logo">
+        <h4>Edusphere</h4>
+        <div class="square"></div>
+      </div>
+      <div class="v-line"></div>
+      <span>Online learing platform</span>
+
+      <div class="edu-logo2">
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+      </div>
+      <div class="edu-logo1">
+        <i class="fa-solid fa-phone"></i>
+        <h2>+91 7568259384</h2>
+        <h2>+919785804144</h2>
+      </div>
+    </div>
+
+    <div class="links">
+      <a href="#">Careers</a>
+      <a href="#">Home</a>
+      <a href="#">Dashboard</a>
+    </div>
+    <div class="copyright">
+      <p>© 2025 Edusphere | ALL Right Reserved | Developed & Maintained By hacker</p>
+    </div>
+  </footer>
+
+  <script src="SContant.js"></script>
+</body>
+
+</html>
